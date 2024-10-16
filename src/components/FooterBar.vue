@@ -14,10 +14,15 @@
 </script>
 
 <style scoped>
+h2 {
+    font-size: 1.3em;
+}
+
 .custom-border-top {
     border-top: 3px solid white;
     padding: 10px;
     color: white;
+    margin-top: 7em;
 }
 
 .small-icon {
