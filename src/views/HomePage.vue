@@ -6,8 +6,8 @@
                 <span class="name-text">Atanas Krstev</span>
             </div>
             <div class="col-4" id="right-col">
-                <img class="btn-portfolio" :src="require('@/assets/btn-portfolio.png')" alt="btn-portfolio"
-                    style="width: 175px; height: 60px;">
+                <router-link to="/portfolio"><img class="btn-portfolio" :src="require('@/assets/btn-portfolio.png')"
+                        alt="btn-portfolio" style="width: 175px; height: 60px;"></router-link>
             </div>
         </div>
     </div>
@@ -20,8 +20,8 @@
             Sofia. My main focus
             is programming in Javascript, Vue.js, React, Node and Laravel. I enjoy tackling challenging and mind bending
             tasks. </p>
-        <img class="btn-view-full-details" :src="require('@/assets/btn-view-full-details.png')"
-            alt="btn-view-full-details" style="width: 200px; height: 60px;">
+        <router-link to="/about"><img class="btn-view-full-details" :src="require('@/assets/btn-view-full-details.png')"
+                alt="btn-view-full-details" style="width: 200px; height: 60px;"></router-link>
     </div>
 </template>
 
