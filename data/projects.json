@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "name": "AI Personal Assistant",
+      "description": "A voice-activated assistant powered by natural language processing that helps manage tasks, schedule events, and provide real-time information.",
+      "pic": "https://example.com/images/ai-assistant.jpg",
+      "link": "https://example.com/projects/ai-personal-assistant"
+    },
+    {
+      "name": "E-Commerce Website",
+      "description": "A fully responsive e-commerce platform for buying and selling products, integrated with secure payment gateways and personalized user experiences.",
+      "pic": "https://example.com/images/ecommerce-website.jpg",
+      "link": "https://example.com/projects/ecommerce-website"
+    },
+    {
+      "name": "Weather Dashboard",
+      "description": "A weather application that provides real-time weather updates and forecasts for any location, with detailed climate and temperature trends.",
+      "pic": "https://example.com/images/weather-dashboard.jpg",
+      "link": "https://example.com/projects/weather-dashboard"
+    }
+  ]
+}
