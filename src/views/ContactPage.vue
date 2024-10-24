@@ -3,7 +3,7 @@
         <h1>Contact Me</h1>
     </div>
     <div class="form-container pt-5">
-        <form>
+        <form @submit.prevent="sendEmail">
             <div class="d-flex justify-content-center">
                 <h2 class="text-white">Via email</h2>
             </div>
@@ -20,7 +20,7 @@
                     :class="{ 'active': textarea || isFocused.textarea }">Message</label>
             </div>
             <div class="d-flex justify-content-center">
-                <button>Send</button>
+                <button type="submit">Send</button>
             </div>
         </form>
     </div>
@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
+
 export default {
     data() {
         return {
@@ -52,6 +54,27 @@ export default {
             if (this[field] === '') {
                 this.isFocused[field] = false;
             }
+        },
+        sendEmail() {
+            const serviceID = process.env.VUE_APP_EMAILJS_SERVICE_ID;
+            const templateID = process.env.VUE_APP_EMAILJS_TEMPLATE_ID;
+            const publicKey = process.env.VUE_APP_EMAILJS_PUBLIC_KEY;
+            const templateParams = {
+                email: this.email,
+                message: this.textarea + " from:" + this.email
+            };
+            console.log(publicKey);
+            emailjs.send(serviceID, templateID, templateParams, publicKey)
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Email sent successfully!');
+                    this.email = '';
+                    this.textarea = '';
+                })
+                .catch((error) => {
+                    console.error('FAILED...', error);
+                    alert('Failed to send email. Please try again.');
+                });
         }
     }
 }
