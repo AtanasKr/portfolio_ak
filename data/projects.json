@@ -1,22 +1,34 @@
 {
   "projects": [
     {
-      "name": "AI Personal Assistant",
-      "description": "A voice-activated assistant powered by natural language processing that helps manage tasks, schedule events, and provide real-time information.",
-      "pic": "https://example.com/images/ai-assistant.jpg",
-      "link": "https://example.com/projects/ai-personal-assistant"
+      "name": "Health Bridge",
+      "description": "A functional superdoc copy where normal users can book an appointment with registered doctor and chat. Made with Next.js",
+      "pic": "project-health-bridge.png",
+      "link": "https://github.com/AtanasKr/HealthBridge"
     },
     {
-      "name": "E-Commerce Website",
-      "description": "A fully responsive e-commerce platform for buying and selling products, integrated with secure payment gateways and personalized user experiences.",
-      "pic": "https://example.com/images/ecommerce-website.jpg",
-      "link": "https://example.com/projects/ecommerce-website"
+      "name": "X-Blogs",
+      "description": "A complete blog site with user authentication, made with react and expressjs",
+      "pic": "project-x-blogs.png",
+      "link": "https://github.com/AtanasKr/Blog-app"
     },
     {
-      "name": "Weather Dashboard",
-      "description": "A weather application that provides real-time weather updates and forecasts for any location, with detailed climate and temperature trends.",
-      "pic": "https://example.com/images/weather-dashboard.jpg",
-      "link": "https://example.com/projects/weather-dashboard"
+      "name": "Ask Me?",
+      "description": "The project represents standalone system where students and teachers can register and interact with each other. The system allows for the creation of custom and dynamic surveys by the teacher that can later be sent to the students.",
+      "pic": "project-ask-me.png",
+      "link": "https://github.com/AtanasKr/ASK-ME?tab=readme-ov-file"
+    },
+    {
+      "name": "Soho",
+      "description": "A simple furniture website",
+      "pic": "project-soho.png",
+      "link": "https://github.com/AtanasKr/soho"
+    },
+    {
+      "name": "Translate app",
+      "description": "Android mobile app created with java. It allows for text and voice translation",
+      "pic": "project-translate-app.png",
+      "link": "https://github.com/AtanasKr/Translate_App"
     }
   ]
 }
